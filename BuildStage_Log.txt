@@ -1,0 +1,55 @@
+using credential github-enterprise:1e64682ff5c66450a4eafb078fa373d6ddfab96de321f8ecc0cc6f5135cecee4
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.wdf.sap.corp/I518401/ABAP-DEV.git # timeout=10
+Cleaning workspace
+ > git.exe rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git.exe reset --hard # timeout=10
+ > git.exe clean -fdx # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.wdf.sap.corp/I518401/ABAP-DEV.git
+ > git.exe --version # timeout=10
+using GIT_ASKPASS to set credentials GitHub Enterprise Access Token
+ > git.exe fetch --no-tags --force --progress -- https://github.wdf.sap.corp/I518401/ABAP-DEV.git +refs/heads/master:refs/remotes/origin/master # timeout=10
+Checking out Revision b755b7e77673401f6eefbb23e27aeca074e9df16 (master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f b755b7e77673401f6eefbb23e27aeca074e9df16 # timeout=10
+ > git.exe branch -a -v --no-abbrev # timeout=10
+ > git.exe branch -D master # timeout=10
+ > git.exe checkout -b master b755b7e77673401f6eefbb23e27aeca074e9df16 # timeout=10
+Commit message: "Update Jenkinsfile"
+ > git.exe rev-list --no-walk b755b7e77673401f6eefbb23e27aeca074e9df16 # timeout=10
+Cleaning workspace
+ > git.exe rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git.exe reset --hard # timeout=10
+ > git.exe clean -fdx # timeout=10
+No credentials specified
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.wdf.sap.corp/I518401/ABAP-DEV.git # timeout=10
+Fetching upstream changes from https://github.wdf.sap.corp/I518401/ABAP-DEV.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --force --progress -- https://github.wdf.sap.corp/I518401/ABAP-DEV.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision b755b7e77673401f6eefbb23e27aeca074e9df16 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f b755b7e77673401f6eefbb23e27aeca074e9df16 # timeout=10
+ > git.exe branch -a -v --no-abbrev # timeout=10
+ > git.exe branch -D master # timeout=10
+ > git.exe checkout -b master b755b7e77673401f6eefbb23e27aeca074e9df16 # timeout=10
+Commit message: "Update Jenkinsfile"
+
+C:\Program Files (x86)\Jenkins\workspace\ABAP-DEV_master>npm install 
+npm WARN saveError ENOENT: no such file or directory, open 'C:\Program Files (x86)\Jenkins\workspace\ABAP-DEV_master\package.json'
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN enoent ENOENT: no such file or directory, open 'C:\Program Files (x86)\Jenkins\workspace\ABAP-DEV_master\package.json'
+npm WARN ABAP-DEV_master No description
+npm WARN ABAP-DEV_master No repository field.
+npm WARN ABAP-DEV_master No README data
+npm WARN ABAP-DEV_master No license field.
+
+up to date in 0.65s
+found 0 vulnerabilities
