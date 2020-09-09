@@ -1,0 +1,7 @@
+Rollback if build fails
+Rolling back to last successful commit
+
+C:\Program Files (x86)\Jenkins\workspace\ABAP-DEV_master>python commit_requests.py 
+{"fromCommit":"ecc1ac57ae7980422ce843b7b70fd8922d4e7790","toCommit":"bfdb70a864511c4061217e9b440580abdabecef3"}
+Sending Email!
+Sending email to: rohit.dipankar@sap.com
