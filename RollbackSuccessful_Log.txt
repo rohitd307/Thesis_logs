@@ -1,0 +1,3 @@
+Rollback in case of a fail build
+Sending Email!
+Sending email to: rohit.dipankar@sap.com
